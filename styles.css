@@ -1,23 +1,91 @@
 * {
-    margin: 0;
-    padding: 0;
-    /* box-sizing: border-box; */
-    /* border: 1px solid red; */
+  margin: 0;
+  padding: 0;
+  /* box-sizing: border-box; */
+  /* border: 1px solid red; */
 }
 
 body {
-    display: grid;
-    place-content: center;
-    height: 100vh;
-    width: 100vw;
-    overflow: hidden;
-    background: whitesmoke;
+  display: grid;
+  place-content: center;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  background: whitesmoke;
 }
 
 #flipbook .shadow {
-    box-shadow: 0 4px 10px #666;
+  box-shadow: 0 4px 10px #666;
 }
 
 img {
   pointer-events: none;
+}
+
+#progress_bar {
+  display: flex;
+  justify-items: center;
+  -webkit-appearance: none;
+  justify-self: center;
+  width: 85%;
+  height: 15px;
+  border-radius: 5px;
+  background: #d3d3d3;
+  outline: none;
+}
+
+#progress_bar::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #ffdd01;
+  cursor: pointer;
+}
+
+#progress_bar::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #ffdd01;
+  cursor: pointer;
+}
+
+#progress_bar::-moz-range-progress {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #ffdd01;
+  cursor: pointer;
+}
+
+#l-arrow-box {
+  margin-right: 10px;
+  color: black;
+  justify-self: left;
+  display: flex;
+  place-items: center;
+  font-size: 20px;
+}
+
+#r-arrow-box {
+  margin-left: 10px;
+  color: black;
+  justify-self: right;
+  display: flex;
+  place-items: center;
+  font-size: 20px;
+}
+
+.arrows {
+  cursor: pointer;;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.arrows:hover{
+  color: #ffdd01;
 }
