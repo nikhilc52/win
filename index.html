@@ -23,8 +23,13 @@
             <div class="utility arrows" id="r-arrow-end">&#129123;</div>
         </div>
     </div>
+    <div class="tooltip" id="turn-tooltip">
+        Click the corners to turn pages, or use arrow keys.
+    </div>
+    <div class="tooltip" id="turn-tooltip-line"></div>
+
     <div id="flipbook">
-        <img src="images/1.jpg">
+        <img id="page-1" src="images/1.jpg">
         <img src="images/2.jpg">
         <img src="images/3.jpg">
         <img src="images/4.jpg">
@@ -67,7 +72,8 @@
             pages: 12
         });
     </script>
-    <script src="script.js"></script>
+    <script src="utility.js"></script>
+    <script src="tooltip.js"></script>
 
 </body>
 
