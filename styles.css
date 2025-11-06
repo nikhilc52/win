@@ -6,12 +6,21 @@
 }
 
 body {
+  /* border: 1px solid green; */
   display: grid;
-  place-content: center;
+  /* place-content: center; */
+  justify-content: center;
   height: 100vh;
   width: 100vw;
   overflow: hidden;
   background: whitesmoke;
+}
+
+#flipbook {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 #flipbook .shadow {
@@ -62,6 +71,14 @@ img {
   cursor: pointer;
 }
 
+.utility-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: auto;
+  margin-bottom: 10px;
+}
+
 #l-arrow-box {
   margin-right: 10px;
   color: black;
@@ -82,14 +99,12 @@ img {
 
 .arrows {
   cursor: pointer;
-  ;
   margin-left: 5px;
   margin-right: 5px;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-
 }
 
 .arrows:hover {
@@ -102,25 +117,23 @@ img {
   font-weight: bold;
   font-size: 12px;
   position: absolute;
-  top: 0px;
-  left: 0px;
   box-shadow: 0 4px 10px #666;
   padding: 5px;
   background-color: white;
   max-width: 150px;
+  margin-right: 5px;
 }
 
-#turn-tooltip-line{
+#turn-tooltip-line {
   z-index: 1001;
   height: 2px;
   width: 2px;
   background-color: #ffdd01;
   position: absolute;
 
-  top: 100px;
-  left: 100px;
+  margin-right: 5px;
 }
 
-.tooltip{
+.tooltip {
   visibility: visible;
 }

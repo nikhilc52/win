@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <div class="utility" style="display: flex; justify-content: center; align-items: center; margin-bottom: 10px;">
+    <div class="utility-box">
         <div class="utility" id="l-arrow-box">
             <div class="utility arrows" id="l-arrow-end">&#129121;</div>
             <div class="utility arrows" id="l-arrow">&#129120;</div>
@@ -64,14 +64,7 @@
 
     <script src="jquery.js"></script>
     <script src="turn.js"></script>
-    <script type="text/javascript">
-        console.log(window.innerHeight, window.innerWidth)
-        $("#flipbook").turn({
-            width: 1028,
-            height: 666,
-            pages: 12
-        });
-    </script>
+    <script src="sizing.js"></script>
     <script src="utility.js"></script>
     <script src="tooltip.js"></script>
 

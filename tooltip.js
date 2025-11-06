@@ -10,6 +10,10 @@ function fitTooltip() {
     tooltip_line.style.left = rect.right - 25 + "px"
     const tooltip_left = tooltip.style.left.substring(0, tooltip.style.left.length - 2)
     tooltip_line.style.width = tooltip_left - rect.right + 25 + "px"
+
+    $('#flipbook').turn('peel', 'tr');
+    
+    // $('#flipbook').turn('peel', false);
 }
 
 
