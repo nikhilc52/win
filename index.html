@@ -5,28 +5,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Win</title>
-    <link rel="stylesheet" href="styles.css">
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/turn.js/4.1.0/turn.min.js"></script> -->
+    <link rel="stylesheet" href="website/styles.css">
 </head>
 
 <body>
     <div class="utility-box">
         <div class="utility" id="l-arrow-box">
-            <div class="utility arrows" id="l-arrow-end">&#129121;</div>
-            <div class="utility arrows" id="l-arrow">&#129120;</div>
+            <div class="utility arrows" id="l-arrow-end">🡡</div>
+            <div class="utility arrows" id="l-arrow">🡠</div>
         </div>
         <input type="range" id="progress_bar" min="0" max="29" value="0" class="utility"
             oninput="$('#flipbook').turn('page', Number(value)+1); updateBarFromBar()">
         <div class="utility" id="r-arrow-box">
-            <div class="utility arrows" id="r-arrow">&#129122;</div>
-            <div class="utility arrows" id="r-arrow-end">&#129123;</div>
+            <div class="utility arrows" id="r-arrow">🡢</div>
+            <div class="utility arrows" id="r-arrow-end">🡣</div>
         </div>
     </div>
     <div class="tooltip" id="turn-tooltip">
         Click the corners to turn pages, or use arrow keys.
     </div>
     <div class="tooltip" id="turn-tooltip-line"></div>
+    <div class="utility" id="info"><a href="https://github.com/nikhilc52/win" target="_blank">&#9432;</a></div>
 
     <div id="flipbook">
         <img id="page-1" src="images/1.jpg">
@@ -62,11 +61,11 @@
     </div>
 
 
-    <script src="jquery.js"></script>
-    <script src="turn.js"></script>
-    <script src="sizing.js"></script>
-    <script src="utility.js"></script>
-    <script src="tooltip.js"></script>
+    <script src="website/jquery.js"></script>
+    <script src="website/turn.js"></script>
+    <script src="website/sizing.js"></script>
+    <script src="website/utility.js"></script>
+    <script src="website/tooltip.js"></script>
 
 </body>
 
