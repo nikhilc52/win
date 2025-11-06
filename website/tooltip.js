@@ -1,9 +1,10 @@
 function fitTooltip() {
     const rect = document.getElementById('page-1').getBoundingClientRect()
+    const w = window.innerWidth
 
     const tooltip = document.getElementById('turn-tooltip')
     tooltip.style.top = rect.top + 15 + "px"
-    tooltip.style.left = rect.right + 55 + "px"
+    tooltip.style.left = (rect.right + w)/2 - 55 + "px"
 
     const tooltip_line = document.getElementById('turn-tooltip-line')
     tooltip_line.style.top = rect.top + 32 + "px"
