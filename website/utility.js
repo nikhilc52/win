@@ -24,10 +24,10 @@ document.getElementById('r-arrow').addEventListener('click', function () {
 })
 
 document.getElementById('r-arrow-end').addEventListener('click', function () {
-    $('#flipbook').turn('page', 30);
+    $('#flipbook').turn('page', 34);
 })
 
-addEventListener('keydown', (event) => {
+window.addEventListener('keydown', (event) => {
     if (event.key === 'ArrowRight'){
         $('#flipbook').turn('next');
     }

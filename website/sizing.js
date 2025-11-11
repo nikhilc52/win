@@ -18,7 +18,6 @@ function setBookSize() {
         $("#flipbook").turn({
             width: 0.65 * window.innerWidth,
             height: 2 * 0.65 * 0.65 * window.innerWidth,
-            pages: 12,
             display: 'single'
         });
     }
@@ -26,7 +25,6 @@ function setBookSize() {
         $("#flipbook").turn({
             width: 0.65 * window.innerWidth,
             height: 0.65 * 0.65 * window.innerWidth,
-            pages: 12,
             display: 'double'
         });
     }

@@ -26,6 +26,7 @@ function hideTooltips() {
     tooltip_class.forEach((e) => e.style.visibility = 'hidden')
 }
 
-addEventListener('click', hideTooltips)
-addEventListener('keydown', hideTooltips)
+window.addEventListener('click', hideTooltips)
+window.addEventListener('keydown', hideTooltips)
+window.addEventListener('touchstart', hideTooltips)
 

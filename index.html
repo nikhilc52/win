@@ -14,7 +14,7 @@
             <div class="utility arrows" id="l-arrow-end">🡡</div>
             <div class="utility arrows" id="l-arrow">🡠</div>
         </div>
-        <input type="range" id="progress_bar" min="0" max="29" value="0" class="utility"
+        <input type="range" id="progress_bar" min="0" max="33" value="0" class="utility"
             oninput="$('#flipbook').turn('page', Number(value)+1); updateBarFromBar()">
         <div class="utility" id="r-arrow-box">
             <div class="utility arrows" id="r-arrow">🡢</div>
@@ -28,7 +28,9 @@
     <div class="utility" id="info"><a href="https://github.com/nikhilc52/win" target="_blank">&#9432;</a></div>
 
     <div id="flipbook">
-        <img id="page-1" src="images/1.jpg">
+        <img id="page-1" class="hard" src="images/TitleFront.jpg">
+        <img class="hard" src="images/TitleBack.jpg">
+        <img src="images/1.jpg">
         <img src="images/2.jpg">
         <img src="images/3.jpg">
         <img src="images/4.jpg">
@@ -58,6 +60,9 @@
         <img src="images/28.jpg">
         <img src="images/29.jpg">
         <img src="images/30.jpg">
+        <!-- <img src="images/31.jpg"> -->
+        <img class="hard" src="images/TitleBack.jpg">
+        <img class="hard" src="images/Back.jpg">
     </div>
 
 
