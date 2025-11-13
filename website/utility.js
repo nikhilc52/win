@@ -15,16 +15,24 @@ document.getElementById('l-arrow').addEventListener('click', function () {
     $('#flipbook').turn('previous');
 })
 
-document.getElementById('l-arrow-end').addEventListener('click', function () {
-    $('#flipbook').turn('page', 1);
+document.getElementById('l-arrow').addEventListener('mouseover', function () {
+    document.getElementById("l-image").src = 'website/icons/up_hover.svg';
+})
+
+document.getElementById('l-arrow').addEventListener('mouseleave', function () {
+    document.getElementById("l-image").src = 'website/icons/up.svg';
 })
 
 document.getElementById('r-arrow').addEventListener('click', function () {
     $('#flipbook').turn('next');
 })
 
-document.getElementById('r-arrow-end').addEventListener('click', function () {
-    $('#flipbook').turn('page', 34);
+document.getElementById('r-arrow').addEventListener('mouseover', function () {
+    document.getElementById("r-image").src = 'website/icons/up_hover.svg';
+})
+
+document.getElementById('r-arrow').addEventListener('mouseleave', function () {
+    document.getElementById("r-image").src = 'website/icons/up.svg';
 })
 
 window.addEventListener('keydown', (event) => {
