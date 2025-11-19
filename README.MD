@@ -1,11 +1,3 @@
-TODO:
-
-Finalize content
-
-Add border between pages
-
-Fixed page numbers/footer
-
 # "Win" by Nikhil Chinchalkar
 
 This is a story about Winchester "Win" Osgood, a one-of-a-kind athlete. His time at Cornell from 1888 to 1892 landed him in the Cornell Sports Hall of Fame for seven different sports: Football, Wrestling, Men's Track & Field, Men's Rowing, Men's Tennis, Gymnastics, and Boxing.
